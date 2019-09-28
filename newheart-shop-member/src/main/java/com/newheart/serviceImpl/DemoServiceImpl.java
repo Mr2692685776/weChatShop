@@ -1,19 +1,32 @@
 package com.newheart.serviceImpl;
 
+import com.newheart.common.api.BaseApiService;
+import com.newheart.common.redis.BaseRedisService;
 import com.newheart.service.DemoService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.util.HashMap;
 import java.util.Map;
 
 @RestController
-public class DemoServiceImpl implements DemoService {
+public class DemoServiceImpl extends BaseApiService implements DemoService {
+
+    @Autowired
+    private BaseRedisService baseRedisService;
 
     @Override
     public Map<String, Object> demo() {
-        HashMap<String, Object> map = new HashMap<String, Object>();
-        map.put("code","200");
-        map.put("status","1");
-        return map;
+        return setResultSuccess() ;
+    }
+
+    @Override
+    public Map<String, Object> setKey(String key, String value) {
+        baseRedisService.setString(key,value);
+        return setResultSuccess();
+    }
+
+    @Override
+    public Map<String, Object> getKey(String key) {
+        return setResultSuccessData(baseRedisService.getString(key));
     }
 }

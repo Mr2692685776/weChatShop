@@ -11,6 +11,7 @@
         <module>newheart-shop-eureka-server</module>
         <module>newheart-shop-api</module>
         <module>newheart-shop-member</module>
+        <module>newheart-shop-common</module>
     </modules>
     <packaging>pom</packaging>
 

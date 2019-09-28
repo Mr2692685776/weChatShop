@@ -4,6 +4,7 @@
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/newheart-shop-api" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/newheart-shop-api/newheart-shop-member-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/newheart-shop-common" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/newheart-shop-eureka-server" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/newheart-shop-member" charset="UTF-8" />
   </component>
