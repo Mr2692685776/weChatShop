@@ -11,22 +11,22 @@ import java.util.Map;
 @RestController
 public class DemoServiceImpl extends BaseApiService implements DemoService {
 
-    @Autowired
-    private BaseRedisService baseRedisService;
+//    @Autowired
+//    private BaseRedisService baseRedisService;
 
     @Override
     public Map<String, Object> demo() {
         return setResultSuccess() ;
     }
 
-    @Override
-    public Map<String, Object> setKey(String key, String value) {
-        baseRedisService.setString(key,value);
-        return setResultSuccess();
-    }
-
-    @Override
-    public Map<String, Object> getKey(String key) {
-        return setResultSuccessData(baseRedisService.getString(key));
-    }
+//    @Override
+//    public Map<String, Object> setKey(String key, String value) {
+//        baseRedisService.setString(key,value);
+//        return setResultSuccess();
+//    }
+//
+//    @Override
+//    public Map<String, Object> getKey(String key) {
+//        return setResultSuccessData(baseRedisService.getString(key));
+//    }
 }

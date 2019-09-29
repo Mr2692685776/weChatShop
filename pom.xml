@@ -12,6 +12,7 @@
         <module>newheart-shop-api</module>
         <module>newheart-shop-member</module>
         <module>newheart-shop-common</module>
+        <module>newheart-shop-message</module>
     </modules>
     <packaging>pom</packaging>
 

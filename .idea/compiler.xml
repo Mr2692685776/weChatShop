@@ -6,10 +6,15 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="newheart-shop-common" />
+        <module name="newheart-shop-eureka-server" />
+        <module name="newheart-shop-member" />
+        <module name="newheart-shop-member-api" />
         <module name="newheartshopcommon" />
         <module name="newheartshopeurekaserver" />
         <module name="newheartshopmember" />
         <module name="newheartshopmemberapi" />
+        <module name="newheartshopmessage" />
       </profile>
     </annotationProcessing>
   </component>

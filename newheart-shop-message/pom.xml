@@ -9,15 +9,13 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>newheart-shop-member</artifactId>
-    <!--添加对newheart-shop-api依赖-->
+    <artifactId>newheart-shop-message</artifactId>
     <dependencies>
         <dependency>
             <groupId>com.heart</groupId>
-            <artifactId>newheart-shop-member-api</artifactId>
+            <artifactId>newheart-shop-common</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
-
     </dependencies>
 
 </project>
